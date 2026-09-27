@@ -1,0 +1,37 @@
+{
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "architecture_sizes": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "split_seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "learning_rate": 0.01,
+  "batch_size": 128,
+  "max_epochs": 150,
+  "patience": 10,
+  "min_delta": 0.001,
+  "weight_decay": 0.0001,
+  "activation": "relu",
+  "max_hidden_neurons": 32,
+  "capacity_probe_epochs": 15,
+  "capacity_min_gain": 0.001
+}

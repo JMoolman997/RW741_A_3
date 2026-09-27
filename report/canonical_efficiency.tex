@@ -1,0 +1,30 @@
+\begin{table*}[t]
+\caption{Training cost: Dry Bean}
+\label{tab:dry-bean-efficiency}
+\centering\small
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrr}
+\toprule Method & Mean updates & Mean examples processed & Mean final hidden & Accepted & Rejected & Mean time (s)\\
+\midrule
+Ordinary baseline & 1766 & 225341 & 108.8 & 0.0 & 0.0 & 1.7\\
+Fixed update-budget control & 3844 & 490365 & 108.8 & 0.0 & 0.0 & 3.7\\
+Dynamic all-classes & 6798 & 867213 & 1.9 & 1.9 & 1.0 & 1.5\\
+Dynamic incremental & 13279 & 1677827 & 4.7 & 4.7 & 6.0 & 3.6\\
+Fixed incremental & 3844 & 485332 & 108.8 & 0.0 & 0.0 & 3.8\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+\begin{table*}[t]
+\caption{Training cost: Steel Plates Faults}
+\label{tab:steel-plates-efficiency}
+\centering\small
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrr}
+\toprule Method & Mean updates & Mean examples processed & Mean final hidden & Accepted & Rejected & Mean time (s)\\
+\midrule
+Ordinary baseline & 264 & 33341 & 320.0 & 0.0 & 0.0 & 0.9\\
+Fixed update-budget control & 543 & 68508 & 320.0 & 0.0 & 0.0 & 1.7\\
+Dynamic all-classes & 1274 & 160702 & 1.9 & 1.9 & 1.0 & 0.7\\
+Dynamic incremental & 2009 & 233601 & 5.0 & 5.0 & 6.0 & 1.9\\
+Fixed incremental & 543 & 62887 & 320.0 & 0.0 & 0.0 & 2.1\\
+\bottomrule
+\end{tabular}}
+\end{table*}

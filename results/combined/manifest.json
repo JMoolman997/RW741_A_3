@@ -1,0 +1,7 @@
+{
+  "configuration_fingerprint": "9fbe4b61c61fa4c6217cc2e2266c67b819ca1c8c454d25635ed1bbda37d51ca8",
+  "datasets": [
+    "dry_bean",
+    "steel_plates"
+  ]
+}

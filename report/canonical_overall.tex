@@ -1,0 +1,30 @@
+\begin{table}[t]
+\caption{Overall test performance: Dry Bean}
+\label{tab:dry-bean-overall}
+\centering
+\begin{tabular}{lcc}
+\toprule Method & Macro-F1 & Fold std. dev.\\
+\midrule
+Ordinary baseline & 0.9396 & 0.0069\\
+Fixed update-budget control & 0.9405 & 0.0061\\
+Dynamic all-classes & 0.9375 & 0.0063\\
+Dynamic incremental & 0.9386 & 0.0064\\
+Fixed incremental & 0.9412 & 0.0060\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[t]
+\caption{Overall test performance: Steel Plates Faults}
+\label{tab:steel-plates-overall}
+\centering
+\begin{tabular}{lcc}
+\toprule Method & Macro-F1 & Fold std. dev.\\
+\midrule
+Ordinary baseline & 0.7638 & 0.0067\\
+Fixed update-budget control & 0.7673 & 0.0070\\
+Dynamic all-classes & 0.7312 & 0.0114\\
+Dynamic incremental & 0.7348 & 0.0096\\
+Fixed incremental & 0.7721 & 0.0075\\
+\bottomrule
+\end{tabular}
+\end{table}

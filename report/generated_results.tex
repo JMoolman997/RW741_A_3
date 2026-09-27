@@ -1,0 +1,69 @@
+\section{Results}
+The results below were generated directly from the experiment outputs. 
+\subsection{Dry\_Bean}
+\begin{table}[t]
+\caption{Fold-level test performance}
+\centering
+\begin{tabular}{lcc}
+\toprule
+Method & Macro F1 & Between-fold SD\\
+\midrule
+baseline & 0.9400 & 0.0065\\
+fixed\_budget\_matched\_baseline & 0.9404 & 0.0061\\
+dynamic\_budget\_matched\_baseline & 0.9401 & 0.0062\\
+dynamic\_incremental & 0.9386 & 0.0064\\
+fixed\_incremental & 0.9415 & 0.0056\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[t]
+\caption{Computational efficiency}
+\centering
+\resizebox{\columnwidth}{!}{\begin{tabular}{lrrrr}
+\toprule Method & Updates & Examples & Hidden & Time (s)\\
+\midrule
+baseline & 1857 & 236961 & 70.4 & 1.4\\
+fixed\_budget\_matched\_baseline & 3798 & 484553 & 70.4 & 2.6\\
+dynamic\_budget\_matched\_baseline & 13279 & 1694019 & 70.4 & 9.6\\
+dynamic\_incremental & 13279 & 1677827 & 4.7 & 3.6\\
+fixed\_incremental & 3798 & 479578 & 70.4 & 2.7\\
+\bottomrule
+\end{tabular}}
+\end{table}
+Fixed incremental learning differed from its compute-matched baseline by $+0.0011$ (95\% CI [-0.0007, 0.0029]). Dynamic incremental learning differed from its compute-matched baseline by $-0.0015$ (95\% CI [-0.0043, 0.0013]).
+\subsection{Steel\_Plates}
+\begin{table}[t]
+\caption{Fold-level test performance}
+\centering
+\begin{tabular}{lcc}
+\toprule
+Method & Macro F1 & Between-fold SD\\
+\midrule
+baseline & 0.7623 & 0.0087\\
+fixed\_budget\_matched\_baseline & 0.7637 & 0.0071\\
+dynamic\_budget\_matched\_baseline & 0.7624 & 0.0038\\
+dynamic\_incremental & 0.7348 & 0.0096\\
+fixed\_incremental & 0.7739 & 0.0073\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[t]
+\caption{Computational efficiency}
+\centering
+\resizebox{\columnwidth}{!}{\begin{tabular}{lrrrr}
+\toprule Method & Updates & Examples & Hidden & Time (s)\\
+\midrule
+baseline & 295 & 37225 & 102.4 & 0.4\\
+fixed\_budget\_matched\_baseline & 587 & 74026 & 102.4 & 0.9\\
+dynamic\_budget\_matched\_baseline & 2009 & 253396 & 102.4 & 3.1\\
+dynamic\_incremental & 2009 & 233601 & 5.0 & 1.9\\
+fixed\_incremental & 587 & 67757 & 102.4 & 0.8\\
+\bottomrule
+\end{tabular}}
+\end{table}
+Fixed incremental learning differed from its compute-matched baseline by $+0.0101$ (95\% CI [0.0018, 0.0184]). Dynamic incremental learning differed from its compute-matched baseline by $-0.0276$ (95\% CI [-0.0413, -0.0138]).
+\section{Discussion}
+Compute-matched comparisons separate presentation order from additional optimisation. Fold-level intervals and Holm-adjusted tests are interpreted as exploratory because outer training folds overlap.
+\section{Conclusion}
+For dry\_bean, fixed and dynamic incremental effects relative to their compute-matched baselines were +0.0011 and -0.0015, respectively. 
+For steel\_plates, fixed and dynamic incremental effects relative to their compute-matched baselines were +0.0101 and -0.0276, respectively. 

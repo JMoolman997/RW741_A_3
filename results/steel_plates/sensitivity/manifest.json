@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-09-26T16:19:07.548796+00:00",
+  "configuration_fingerprint": "9fbe4b61c61fa4c6217cc2e2266c67b819ca1c8c454d25635ed1bbda37d51ca8",
+  "validation_only": true,
+  "seed": 1,
+  "capacity_probe_epochs": [
+    10,
+    15,
+    25
+  ],
+  "capacity_min_gains": [
+    0.0005,
+    0.001,
+    0.002
+  ]
+}

@@ -1,0 +1,119 @@
+% Generated from canonical notebook outputs. Do not edit manually.
+\begin{table}[t]
+\caption{Overall test performance: Dry Bean}
+\label{tab:dry-bean-overall}
+\centering
+\begin{tabular}{lcc}
+\toprule Method & Macro-F1 & Fold std. dev.\\
+\midrule
+Ordinary baseline & 0.9396 & 0.0069\\
+Fixed update-budget control & 0.9405 & 0.0061\\
+Dynamic all-classes & 0.9375 & 0.0063\\
+Dynamic incremental & 0.9386 & 0.0064\\
+Fixed incremental & 0.9412 & 0.0060\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[t]
+\caption{Minority performance: Dry Bean}
+\label{tab:dry-bean-minority}
+\centering
+\begin{tabular}{lcc}
+\toprule Method & Macro-F1 & Recall\\
+\midrule
+Ordinary baseline & 0.9657 & 0.9596\\
+Fixed update-budget control & 0.9674 & 0.9631\\
+Dynamic all-classes & 0.9633 & 0.9561\\
+Dynamic incremental & 0.9646 & 0.9585\\
+Fixed incremental & 0.9688 & 0.9639\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table*}[t]
+\caption{Paired fold-level comparisons: Dry Bean}
+\label{tab:dry-bean-statistics}
+\centering\small
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrr}
+\toprule Family & Comparison & Mean diff. & 95\% interval & $d_z$ & Raw $p$ & Holm $p$ & $n$\\
+\midrule
+Primary & Fixed incremental minus Fixed update-budget control & +0.0007 & [-0.0012, 0.0026] & 0.449 & 0.3725 & 0.3725 & 5\\
+Primary & Dynamic incremental minus Dynamic all-classes & +0.0011 & [-0.0002, 0.0024] & 1.069 & 0.0752 & 0.1503 & 5\\
+Minority exploratory & Fixed incremental minus Fixed update-budget control & +0.0014 & [-0.0015, 0.0044] & 0.606 & 0.2471 & 0.2471 & 5\\
+Minority exploratory & Dynamic incremental minus Dynamic all-classes & +0.0013 & [-0.0005, 0.0031] & 0.878 & 0.1211 & 0.2422 & 5\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+\begin{table*}[t]
+\caption{Training cost: Dry Bean}
+\label{tab:dry-bean-efficiency}
+\centering\small
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrr}
+\toprule Method & Mean updates & Mean examples processed & Mean final hidden & Accepted & Rejected & Mean time (s)\\
+\midrule
+Ordinary baseline & 1766 & 225341 & 108.8 & 0.0 & 0.0 & 1.7\\
+Fixed update-budget control & 3844 & 490365 & 108.8 & 0.0 & 0.0 & 3.7\\
+Dynamic all-classes & 6798 & 867213 & 1.9 & 1.9 & 1.0 & 1.5\\
+Dynamic incremental & 13279 & 1677827 & 4.7 & 4.7 & 6.0 & 3.6\\
+Fixed incremental & 3844 & 485332 & 108.8 & 0.0 & 0.0 & 3.8\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+\begin{table}[t]
+\caption{Overall test performance: Steel Plates Faults}
+\label{tab:steel-plates-overall}
+\centering
+\begin{tabular}{lcc}
+\toprule Method & Macro-F1 & Fold std. dev.\\
+\midrule
+Ordinary baseline & 0.7638 & 0.0067\\
+Fixed update-budget control & 0.7673 & 0.0070\\
+Dynamic all-classes & 0.7312 & 0.0114\\
+Dynamic incremental & 0.7348 & 0.0096\\
+Fixed incremental & 0.7721 & 0.0075\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[t]
+\caption{Minority performance: Steel Plates Faults}
+\label{tab:steel-plates-minority}
+\centering
+\begin{tabular}{lcc}
+\toprule Method & Macro-F1 & Recall\\
+\midrule
+Ordinary baseline & 0.8320 & 0.8226\\
+Fixed update-budget control & 0.8438 & 0.8313\\
+Dynamic all-classes & 0.7644 & 0.7794\\
+Dynamic incremental & 0.7795 & 0.7934\\
+Fixed incremental & 0.8506 & 0.8558\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table*}[t]
+\caption{Paired fold-level comparisons: Steel Plates Faults}
+\label{tab:steel-plates-statistics}
+\centering\small
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrr}
+\toprule Family & Comparison & Mean diff. & 95\% interval & $d_z$ & Raw $p$ & Holm $p$ & $n$\\
+\midrule
+Primary & Fixed incremental minus Fixed update-budget control & +0.0047 & [-0.0096, 0.0191] & 0.411 & 0.4105 & 0.8210 & 5\\
+Primary & Dynamic incremental minus Dynamic all-classes & +0.0037 & [-0.0094, 0.0167] & 0.350 & 0.4781 & 0.8210 & 5\\
+Minority exploratory & Fixed incremental minus Fixed update-budget control & +0.0069 & [-0.0194, 0.0331] & 0.324 & 0.5091 & 0.5091 & 5\\
+Minority exploratory & Dynamic incremental minus Dynamic all-classes & +0.0151 & [-0.0157, 0.0459] & 0.608 & 0.2456 & 0.4913 & 5\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+\begin{table*}[t]
+\caption{Training cost: Steel Plates Faults}
+\label{tab:steel-plates-efficiency}
+\centering\small
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrr}
+\toprule Method & Mean updates & Mean examples processed & Mean final hidden & Accepted & Rejected & Mean time (s)\\
+\midrule
+Ordinary baseline & 264 & 33341 & 320.0 & 0.0 & 0.0 & 0.9\\
+Fixed update-budget control & 543 & 68508 & 320.0 & 0.0 & 0.0 & 1.7\\
+Dynamic all-classes & 1274 & 160702 & 1.9 & 1.9 & 1.0 & 0.7\\
+Dynamic incremental & 2009 & 233601 & 5.0 & 5.0 & 6.0 & 1.9\\
+Fixed incremental & 543 & 62887 & 320.0 & 0.0 & 0.0 & 2.1\\
+\bottomrule
+\end{tabular}}
+\end{table*}

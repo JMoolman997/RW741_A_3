@@ -1,0 +1,11 @@
+outer_fold,minority_rank,class_index,class_name
+1,1,1,BOMBAY
+1,2,0,BARBUNYA
+2,1,1,BOMBAY
+2,2,0,BARBUNYA
+3,1,1,BOMBAY
+3,2,0,BARBUNYA
+4,1,1,BOMBAY
+4,2,0,BARBUNYA
+5,1,1,BOMBAY
+5,2,0,BARBUNYA
